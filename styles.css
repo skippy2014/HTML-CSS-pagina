@@ -3,7 +3,6 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
-  text-transform: capitalize;
 }
 
 html {
@@ -18,13 +17,14 @@ html {
   right: 0;
 
   height: 8vh;
-  display: flex;
+
   background-color: rgb(28, 83, 3);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 24px;
+  z-index: 1;
 }
 
 #Kerstmanneke img {
@@ -33,6 +33,7 @@ html {
   width: 7vw;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 .links {
@@ -44,8 +45,9 @@ html {
 .links a {
   padding: 0 7vw;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: 0.7s;
+  font-weight: bold;
 }
 
 .links a:hover {
@@ -56,19 +58,216 @@ html {
 
 .slideshow {
   position: relative;
-  top: 20vh;
-  left: 30vw;
-}
+  top: 13vh;
+  left: 40vw;}
 
 .image-slide {
   display: none;
 }
 
 .slide-image {
-  width: 40vw;
+  width: 50vw;
 }
 
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.images img {
+  width: 8vw;
+  height: 17vh;
+  border: black solid 0.2vw;
+  padding: 0.4vw;
+  border-radius: 1vw;
+}
+
+.images {
+  position: relative;
+  top: 0vh;
+  display: grid;
+  grid-template-columns: repeat(7);
+  left: 4vw;
+  transform: translateY(-20vh);
+}
+
+.sectie1 {
+  grid-column: 1/2;
+}
+
+.sectie2 {
+  grid-column: 3/4;
+}
+
+.sectie3 {
+  grid-column: 5/6;
+}
+
+.sectie4 {
+  grid-column: 7/8;
+}
+
+/* Tweede pagina */
+
+.header2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.89)),
+    url("kerstbanner.png");
+  background-size: cover;
+  width: 100vw;
+  height: 25vw;
+  color: white;
+  text-align: center;
+  padding-top: 2.5vh;
+}
+
+.links2 {
+  position: fixed;
+  width: 70vw;
+  left: 25.5vw;
+  z-index: 1;
+}
+
+.links2 a {
+  padding: 0 7vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.7s;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 25vh;
+  color: goldenrod;
+}
+
+.Foto-gallerij {
+  display: grid;
+  gap: 0px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+}
+.fotobox {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+.pic1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 55vw;
+}
+.pic2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 55vw;
+}
+.pic3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 55vw;
+}
+.pic4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 55vw;
+}
+.pic5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 100%;
+  height: 55vw;
+}
+.pic6 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 100%;
+  height: 55vw;
+}
+.pic7 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 100%;
+  height: 55vw;
+}
+.pic8 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 100%;
+  height: 55vw;
+}
+#Foto {
+  transition: transform 0.7s;
+  transform: scale(1);
+  opacity: 0.6;
+}
+
+#Foto:hover {
+  transform: scale(1.05);
+}
+
+.footer{
+  bottom: 0; 
+  width: 100%;
+  background: rgb(5, 80, 21);
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+.footer h3{
+  padding: 2vw;
+}
+
+.footer1{
+  transform:translateY(0vh);
+  height: 15vh;
+}
+
+
+
+h2{
+  font-size: 4vh;
+}
+
+p{ font-size: 3vh;
+
+}
+
+.kerstmis2{
+  position: relative;
+ top:-50vh;
+  width: 20vw;
+  
+  padding-left: 3vw;
+  
+ 
 }
