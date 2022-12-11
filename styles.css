@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 64%;
+}
+/* Dit is de styling voor de header */
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 8vh;
+  display: flex;
+  background-color: rgb(28, 83, 3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#Kerstmanneke img {
+  position: fixed;
+  height: 8vh;
+  width: 7vw;
+  left: 0;
+  top: 0;
+}
+
+.links {
+  position: fixed;
+  width: 70vw;
+  left: 27.5vw;
+}
+
+.links a {
+  padding: 0 7vw;
+  text-decoration: none;
+  color: black;
+  transition: 0.7s;
+}
+
+.links a:hover {
+  color: red;
+}
+
+/* Body */
+
+.slideshow {
+  position: relative;
+  top: 20vh;
+  left: 30vw;
+}
+
+.image-slide {
+  display: none;
+}
+
+.slide-image {
+  width: 40vw;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
