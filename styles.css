@@ -8,13 +8,16 @@
 html {
   font-size: 64%;
 }
+
+body {
+  width: 100%;
+}
 /* Dit is de styling voor de header */
 .header {
   position: fixed;
 
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
 
   height: 8vh;
 
@@ -40,6 +43,8 @@ html {
   position: fixed;
   width: 70vw;
   left: 27.5vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .links a {
@@ -59,14 +64,15 @@ html {
 .slideshow {
   position: relative;
   top: 13vh;
-  left: 40vw;}
+  left: 40vw;
+}
 
 .image-slide {
   display: none;
 }
 
 .slide-image {
- width: 50vw;
+  width: 50vw;
   height: 30vw;
 }
 
@@ -126,6 +132,8 @@ html {
   width: 70vw;
   left: 25.5vw;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .links2 a {
@@ -230,8 +238,8 @@ h1 {
   transform: scale(1.05);
 }
 
-.footer{
-  bottom: 0; 
+.footer {
+  bottom: 0;
   width: 100%;
   background: rgb(5, 80, 21);
   height: 10vh;
@@ -240,36 +248,30 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-
+  position: fixed;
 }
 
-.footer h3{
+.footer h3 {
   padding: 2vw;
 }
 
-.footer1{
-  transform:translateY(0vh);
-  height: 15vh;
+.footer1 {
+  transform: translateY(0vh);
+  height: 10vh;
 }
 
-
-
-h2{
+h2 {
   font-size: 4vh;
 }
 
-p{ font-size: 3vh;
-
+p {
+  font-size: 3vh;
 }
 
-.kerstmis2{
+.kerstmis2 {
   position: relative;
- top:-47vh;
+  top: -47vh;
   width: 20vw;
-  
-  padding-left: 3vw;
-  
- 
-}
 
+  padding-left: 3vw;
+}
